@@ -1,0 +1,25 @@
+{
+  "name": "osaqmsconfig",
+  "version": "1.0.0",
+  "description": "Config API for OSA QMS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReiSchneider/osaqms-config.git"
+  },
+  "author": "Kyle Cedrick Cancio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReiSchneider/osaqms-config/issues"
+  },
+  "homepage": "https://github.com/ReiSchneider/osaqms-config#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  }
+}
