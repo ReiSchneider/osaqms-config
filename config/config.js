@@ -12,6 +12,6 @@ module.exports = {
         collection: mongoCollection,
         connection: 'mongodb://' + mongoHost + ':' + mongoPort + '/' + mongoCollection
     },
-    port = process.env.PORT || 8080
+    port: process.env.PORT || 8080
 
 }

@@ -1,32 +1,23 @@
 //const config = require('../../config/config');
 
-const mongoose = require('../service/DBService').mongoose, 
+const mongoose = require('../service/DatabaseService'), 
     Schema = mongoose.Schema;
 const autoIncrement = require('mongoose-auto-increment');
-
 
 autoIncrement.initialize(mongoose.connection);
 
 const userSchema = new Schema({
-    knoxId: {
-        type: String, 
-        required: [true, 'knoxId is required!'],
+    userId: {
+        type: String,
+        required: [true, 'userId is required'],
         unique: true
     },
-    permissions: {
-        type: Array, 
-        default: [0,0,0], 
-        required: true
+    name: {
+        type: String,
+        require: [true, 'name is required']
     },
-    password: {
-        type: String, 
-        required: [true, 'password is required!'],
-        validate: {
-            validator: function(v) {
-                return /^(.){5,}$/.test(v);
-            },
-            message: 'Password should be at least 5 characters long!'
-        }
+    nickname: {
+        type: String
     }
  }, { versionKey: false , timestamps: { createdAt: 'createTime', updatedAt: 'updateTime'} });
 
