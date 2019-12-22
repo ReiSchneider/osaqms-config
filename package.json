@@ -24,6 +24,7 @@
     "express": "^4.17.1",
     "http-status": "^1.4.2",
     "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.2",
     "mongoose-auto-increment": "^5.0.1",
     "nodemon": "^1.19.4"
   }
