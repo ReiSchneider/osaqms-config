@@ -20,7 +20,7 @@ async function create(req, res) {
 
     try {
         const response = await registerUser(form);
-        res.send(response.toString());
+        res.send(`<h1>Hello ${response.userId}!, welcome to my app</h1><br /><br />` + response.toString());
         res.end();
     } catch (err) {
         res.send(err);
