@@ -19,8 +19,8 @@ async function create(req, res) {
     var form = req.query;
 
     try {
-        const response = await registerUser(form);
-        res.send(`<h1>Hello ${response.userId}!, welcome to my app</h1><br /><br />` + response.toString());
+        //const response = await registerUser(form);
+        res.send(`<h1>Hello ${form.userId}!, welcome to my app</h1><br /><br />`);// + response.toString());
         res.end();
     } catch (err) {
         res.send(err);
